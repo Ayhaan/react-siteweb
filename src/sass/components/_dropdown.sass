@@ -1,0 +1,35 @@
+.drop-down
+    color: #777 
+    background:  transparent
+     
+.bloc-top
+    border: none
+    outline: none
+    display: flex
+    align-items: top
+    background: transparent
+    color: #777 
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+        color: #20c997
+
+.bloc-links
+    margin-top: 8px
+    position: absolute
+    z-index: 2
+    background-color: #fff
+    border-radius: 2px
+    border-top: 0.8px solid #20c997
+    padding-right: 25px
+    opacity: 0
+    transition: 0.3s
+    &:hover
+        color: #20c997
+    li
+        list-style-type: none
+        padding: 5px 0
+
+@media screen and ( max-width: 990px )
+    .bloc-links
+        right: 1px

@@ -1,0 +1,60 @@
+.formulaire-row
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    .formulaire
+        width: 60%
+        margin-bottom: 10%
+        .full-name 
+            display: flex
+            justify-content: space-between
+            .firstName
+                width: 48%
+            .lastName
+                width: 48%
+        .row-input
+            display: flex
+            flex-direction: column
+            margin-bottom: 20px
+            input 
+                height: 43px
+                border-radius: 0
+                border:  #777 solid 1px
+                background-color: transparent
+                outline: none
+                transition: all 0.2s
+                color: #fff
+                &:focus
+                    border-color:  #20c997 
+            textarea 
+                border-radius: 0
+                border:  #777 solid 1px
+                background-color: transparent
+                outline: none
+                transition: all 0.2s
+                padding: 5px
+                color: #fff
+                &:focus
+                    border-color:  #20c997 
+        button 
+            background-color: #20c997 
+            border-color: #20c997 
+            border-radius: 0
+            color: #fff
+            padding: 10px 20px
+    .informations
+        width: 20%
+        div
+            margin-bottom: 20px
+            p 
+                margin: 0
+            .text-vert
+                color:  #20c997 
+
+@media screen and ( max-width: 559px)
+    .formulaire 
+        width: 90% !important
+    .informations
+        width: 90% !important
+        text-align: center
+        margin-top: 50px

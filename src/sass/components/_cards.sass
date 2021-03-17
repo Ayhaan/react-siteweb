@@ -1,0 +1,50 @@
+.main 
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    // margin-top: 70px
+    .card
+        position: relative
+        margin-bottom: 25px
+        padding: 0
+        filter: grayscale(1)
+        transition: all 0.3s
+        overflow: hidden 
+        background: #000
+        height: 30% 
+        width: 30%
+        &:hover img
+            transform: scale(1.05)     
+        &:hover 
+            filter: grayscale(0)
+        .image-info
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+            z-index: 2
+            h2 
+                color: white
+                text-align: center
+            a 
+                border: solid 2px #fff
+                text-transform: uppercase
+                letter-spacing: 2px
+                padding: 10px 20px
+                font-size: 11px
+                color: white
+                transition: all 0.2s
+                &:hover
+                    background: #fff
+                    color: black
+                    text-decoration: dashed
+        img
+            transition: all 0.3s
+     
+@media screen and ( max-width: 559px)
+    .card 
+        width: 90% !important
+@media screen and ( min-width: 560px) and ( max-width: 999px)
+    .card 
+        width: 45% !important
+    
